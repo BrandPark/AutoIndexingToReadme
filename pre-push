@@ -1,0 +1,25 @@
+#!/bin/sh
+
+echo "auto create index in the 'README.md'"
+
+echo "Run PrePush.java"  
+
+RESULT=$(java PrePush.java 2>&1)
+
+if [ "$RESULT" -ne 0 ]; then
+        echo
+        echo "Failed to run PrePush.java"
+        exit 1
+fi
+
+echo "Success to run PrePush.java"
+
+GIT_RESULT=$(git add ./README.md && git commit -m "auto indexing to 'README.md'" 2>&1)
+
+if [ "$GIT_RESULT" -ne 0 ]; then
+        echo
+        echo "Failed to git commit updated-README.md"
+        exit 1
+fi
+
+exit 0
