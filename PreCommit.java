@@ -2,7 +2,7 @@ import java.io.*;
 import java.nio.charset.StandardCharsets;
 import java.util.*;
 
-public class PrePush {
+public class PreCommit {
 
     private static final String ROOT_PATH = new File("").getAbsolutePath();
     private static final File ROOT_DIR = new File(ROOT_PATH);
