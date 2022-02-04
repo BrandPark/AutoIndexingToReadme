@@ -22,4 +22,6 @@ if [ "$GIT_RESULT" -ne 0 ]; then
         exit 1
 fi
 
+echo "Success to git commit updated-README.md"
+
 exit 0
