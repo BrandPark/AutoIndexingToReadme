@@ -2,19 +2,19 @@
 
 echo "auto create index in the 'README.md'"
 
-echo "Run PrePush.java"  
+echo "Run PreCommit.java"  
 
-RESULT=$(java PrePush.java 2>&1)
+RESULT=$(java PreCommit.java 2>&1)
 
 if [ "$RESULT" -ne 0 ]; then
         echo
-        echo "Failed to run PrePush.java"
+        echo "Failed to run PreCommit.java"
         exit 1
 fi
 
-echo "Success to run PrePush.java"
+echo "Success to run PreCommit.java"
 
-GIT_RESULT=$(git add ./README.md && git commit -m "auto indexing to 'README.md'" 2>&1)
+GIT_RESULT=$(git add ./README.md 2>&1)
 
 if [ "$GIT_RESULT" -ne 0 ]; then
         echo
