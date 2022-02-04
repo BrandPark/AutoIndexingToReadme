@@ -155,7 +155,7 @@ public class PrePush {
 
         for (int i = 0; i < cArr.length; i++) {
             if(cArr[i] == '_') cArr[i] = ' ';
-            if(cArr[i] == '%') cArr[i] = '/';
+            if(cArr[i] == '-') cArr[i] = '/';
         }
 
         return String.valueOf(cArr).replaceAll(".md", "");
