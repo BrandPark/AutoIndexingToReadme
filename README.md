@@ -1,4 +1,5 @@
-# AutoIndexingToReadme
+# auto-indexing-README-for-TIL
+
 TIL을 작성할 때 Index를 직접 수정하는 작업이 번거로워 만들었습니다.
 
 `git hook`을 사용하여 **Commit을 README.md 파일에 인덱스를 만들어주거나 수정하는 작업을 자동으로 해줍니다.**
