@@ -108,7 +108,7 @@ public class PreCommit {
 			return;
 		}
 		
-		bw.write("# Index\n");
+		bw.write("# Index\n\n");
 		
         for (String dirname : filenamesByDirname.keySet()) {
 
