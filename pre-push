@@ -14,7 +14,7 @@ fi
 
 echo "Success to run PrePush.java"
 
-GIT_RESULT=$(git add ./README.md && git commit -m "auto indexing to 'README.md'" 2>&1)
+GIT_RESULT=$(git add ./README.md && git commit -m "auto indexing to 'README.md'" && git push --no-verify 2>&1)
 
 if [ "$GIT_RESULT" -ne 0 ]; then
         echo
