@@ -102,7 +102,7 @@ public class PrePush {
         }
 
         if (!isIndexTitle) {
-            bw.write("# Index\n\n");
+            bw.write("\n# Index\n\n");
         } else {
             bw.write("\n");
         }
